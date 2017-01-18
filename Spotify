@@ -1,0 +1,12 @@
+import spotipy
+ class Spotify:
+    ...:     def __init__(self, username, playlist, track_id, money = None):
+    ...:         self.username = username
+    ...:         self.playlist = playlist
+    ...:         self.track_id = track_id
+    ...:         if money is None:
+    ...:             money = {}
+    ...:         self.money = money
+    ...:         for track_id in playlist[:1]:
+    ...:             if money == balance > 0:
+    ...:                 print (track_id)
