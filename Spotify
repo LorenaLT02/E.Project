@@ -1,12 +1,10 @@
 import spotipy
- class Spotify:
-    ...:     def __init__(self, username, playlist, track_id, money = None):
-    ...:         self.username = username
-    ...:         self.playlist = playlist
-    ...:         self.track_id = track_id
-    ...:         if money is None:
-    ...:             money = {}
-    ...:         self.money = money
-    ...:         for track_id in playlist[:1]:
-    ...:             if money == balance > 0:
-    ...:                 print (track_id)
+
+sp_url = 'spotify:artist:3TVXtAsR1Inumwj472S9r4'
+
+spotify = spotipy.Spotify()
+outcome = spotify.artist_top_tracks(sp_url)
+
+for track in outcome['tracks']:
+    print ('track  :  '+ track['name'])
+    print ('audio  :  '+ track['preview_url'])
